@@ -30,9 +30,11 @@ Execute the necessary commands/batch file for the desired output.
 ## Exercise 1: Basic Directory and File Operations
 Create a directory named "MyLab" on the desktop.
 
+```
+
   mkdir %userprofile%\Desktop\MyLab
-  
-  
+
+```
   
   ![image](https://github.com/SubhashriRavichandran10/Windows-basic-commands-batchscript/assets/145743413/893365db-c185-455b-9bb1-ab0452e7ae76)
 
@@ -44,7 +46,12 @@ Change to the "MyLab" directory and create an empty text file named "MyFile.txt"
 
 List the contents of the "MyLab" directory.
 
+
+```
+
 cd %userprofile%\Desktop\MyLab
+
+```
 
 
 ![image](https://github.com/SubhashriRavichandran10/Windows-basic-commands-batchscript/assets/145743413/481fed75-c6a1-46f4-868b-a6691553a3ba)
@@ -61,9 +68,12 @@ cd %userprofile%\Desktop\MyLab
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
 
+```
 
 dir %userprofile%\Desktop\MyLab
 
+
+```
 
 ![image](https://github.com/SubhashriRavichandran10/Windows-basic-commands-batchscript/assets/145743413/e3d3a5e1-54ef-42c1-9c47-c7736eaaed16)
 
@@ -72,10 +82,15 @@ dir %userprofile%\Desktop\MyLab
 
 Move the "MyLab" directory to the "Documents" folder.
 
+```
+
 
 mkdir %userprofile%\Desktop\Backup
 
 copy MyFile.txt %userprofile%\Desktop\Backup
+
+
+```
 
 ![image](https://github.com/SubhashriRavichandran10/Windows-basic-commands-batchscript/assets/145743413/c83cbc44-59ae-4e93-b484-88308ab1748e)
 
@@ -85,9 +100,11 @@ copy MyFile.txt %userprofile%\Desktop\Backup
 
 ## COMMAND AND OUTPUT
 
+```
 
 mv Myfile.txt %userprofile%\Documents
 
+```
 
 ![image](https://github.com/SubhashriRavichandran10/Windows-basic-commands-batchscript/assets/145743413/b9e64d20-6358-44c6-8490-bdf95a1b9322)
 
@@ -95,14 +112,18 @@ mv Myfile.txt %userprofile%\Documents
 ## Exercise 2: Advanced Batch Scripting
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
 
+```
+
 @echo off
 mkdir %userprofile%\Desktop\DocBackup
 copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
 echo Backup completed successfully!
 
+```
 
 Modify the script to delete files with the ".docx" extension from the "Documents" folder after creating the backup.
 
+```
 
 @echo off
 mkdir %userprofile%\Desktop\DocBackup
@@ -111,7 +132,7 @@ del %userprofile%\Documents\*.docx
 echo Backup and deletion completed successfully!
 
 
-
+```
 
 ## OUTPUT
 
